@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage with WhatsApp Button</title>
+    <style>
+     
+    body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        background: linear-gradient(to bottom, #1e3c72, #2a5298);
+        color: #fff;
+    }
+    header {
+        background: linear-gradient(to right, #ff7e5f, #feb47b);
+        color: white;
+        text-align: center;
+        padding: 15px 20px;
+        font-size: 1.8rem;
+        font-weight: bold;
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.8);
+        padding: 10px;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 1rem;
+        font-weight: 500;
+        padding: 8px 12px;
+        border-radius: 5px;
+        transition: background 0.3s ease, color 0.3s ease;
+    }
+    nav a:hover {
+        background: #feb47b;
+        color: #1e3c72;
+    }
+    main {
+        flex: 1;
+        text-align: center;
+        margin: 20px auto;
+        padding: 20px;
+        max-width: 900px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 15px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(10px);
+    }
+    main h1 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+    main p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+    .whatsapp-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: linear-gradient(to right, #25d366, #128c7e);
+        color: white;
+        font-size: 16px;
+        padding: 12px 18px;
+        border: none;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .whatsapp-button:hover {
+        transform: scale(1.1);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        background: linear-gradient(to right, #128c7e, #25d366);
+    }
+    .whatsapp-icon {
+        margin-right: 8px;
+        font-size: 20px;
+    }
+    footer {
+        background: linear-gradient(to right, #2a5298, #1e3c72);
+        color: #fff;
+        text-align: center;
+        padding: 15px;
+        font-size: 0.9rem;
+        box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2);
+    }
+    footer a {
+        color: #feb47b;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    footer a:hover {
+        text-decoration: underline;
+    }
+</style>
+
+   
+</head>
+<body>
+    <header>
+        Welcome to Saxena Home Tutors
+    </header>
+
+    <nav>
+        <div>
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <main id="about">
+        <h1>About Us</h1>
+        <p>
+            Saxena Home Tutors provides jobs to the teachers, and it will be very helpful for students
+            to sit and study online. It is a useful platform for students as well.
+        </p>
+        <p>
+            Our team is here to help you with any questions, concerns, or feedback. We look forward to connecting with you!
+        </p>
+    </main>
+
+    <a
+        href="https://wa.me/+919711667369"
+        class="whatsapp-button"
+        target="_blank"
+        title="Chat with us on WhatsApp"
+    >
+        <span class="whatsapp-icon">📞</span>
+        WhatsApp Us
+    </a>
+
+    <footer>
+        &copy; 2024 Saxena Home Tutors. All Rights Reserved.
+    </footer>
+</body>
+</html>
